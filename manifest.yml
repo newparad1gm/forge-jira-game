@@ -1,0 +1,15 @@
+modules:
+  jira:projectPage:
+    - key: browser-jira-game-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      title: browser-jira-game
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/ef784f1e-84d5-4f8f-acd2-242944d32b10
